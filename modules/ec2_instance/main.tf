@@ -16,7 +16,7 @@ resource "aws_instance" "main" {
 
   subnet_id                   = var.ec2.subnet_id
   vpc_security_group_ids      = var.ec2.vpc_security_group_ids
-  associate_public_ip_address = var.ec2.is_pubic_ip
+  associate_public_ip_address = var.ec2.is_pubic
 
   #   key_name = "example-key"
   lifecycle {
