@@ -1,6 +1,6 @@
 # ECR
 locals {
-  repository_name       = format("%s-%s-ecr-%s-%02d", var.pj_tags.name, var.pj_tags.env, var.ecr.prefix, 1)
+  repository_name = format("%s-%s-ecr-%s-%02d", var.pj_tags.name, var.pj_tags.env, var.ecr.prefix, 1)
 }
 
 resource "aws_ecr_repository" "main" {

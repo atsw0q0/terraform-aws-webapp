@@ -11,12 +11,12 @@ variable "pj_tags" {
 
 variable "ecr" {
   type = object({
-    prefix                = string
-    is_enable_immutable           = optional(bool, false)
+    prefix              = string
+    is_enable_immutable = optional(bool, false)
   })
   default = {
-    prefix                = "app"
-    is_enable_immutable      = false
+    prefix              = "app"
+    is_enable_immutable = false
   }
 }
 
