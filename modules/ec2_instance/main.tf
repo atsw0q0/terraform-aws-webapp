@@ -14,6 +14,7 @@ resource "aws_instance" "main" {
     Env  = var.pj_tags.env
   }
 
+
   subnet_id                   = var.ec2.subnet_id
   vpc_security_group_ids      = var.ec2.vpc_security_group_ids
   associate_public_ip_address = var.ec2.is_pubic
